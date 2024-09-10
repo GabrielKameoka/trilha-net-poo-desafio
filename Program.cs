@@ -1,5 +1,4 @@
 ﻿using DesafioPOO.Models;
-
 class Program
 {
     static void Main(string[] args)
@@ -16,7 +15,7 @@ class Program
             System.Console.WriteLine("2 - Nokia 5.3");
             string escolhaModelo = Console.ReadLine();
 
-            if (escolhaModelo == "Nokia 5.4" || escolha == "1")
+            if (escolhaModelo == "1" || escolhaModelo == "Nokia 5.4")
             {
                 if (escolhaModelo == "1")
                 {
@@ -33,13 +32,16 @@ class Program
 
                 nokia.Apresentacao();
 
+                System.Console.WriteLine("Iremos te ligar para testar o seu número de celular.");
+                nokia.Ligar();
+
                 System.Console.WriteLine("Digite o nome do aplicativo para instalar");
                 string nomeApp = Console.ReadLine();
 
                 nokia.InstalarAplicativo(nomeApp);
             }
 
-            if (escolhaModelo == "Nokia 5.3" || escolha == "2")
+            if (escolhaModelo == "2" || escolha == "Nokia 5.3")
             {
                 if (escolhaModelo == "2")
                 {
@@ -56,6 +58,9 @@ class Program
 
                 nokia.Apresentacao();
 
+                System.Console.WriteLine("Iremos te ligar para testar o seu número de celular.");
+                nokia.Ligar();
+
                 System.Console.WriteLine("Digite o nome do aplicativo para instalar");
                 string nomeApp = Console.ReadLine();
 
@@ -70,7 +75,7 @@ class Program
             System.Console.WriteLine("2 - Iphone 13");
             string escolhaModelo = Console.ReadLine();
 
-            if (escolhaModelo == "Iphone X" || escolha == "1")
+            if (escolhaModelo == "1" || escolha == "Iphone X")
             {
                 if (escolhaModelo == "1")
                 {
@@ -88,13 +93,16 @@ class Program
 
                 iphone.Apresentacao();
 
+                System.Console.WriteLine("Iremos te ligar para testar o seu número de celular.");
+                iphone.Ligar();
+
                 System.Console.WriteLine("Digite o nome do aplicativo para instalar");
                 string nomeApp = Console.ReadLine();
 
                 iphone.InstalarAplicativo(nomeApp);
             }
 
-            if (escolhaModelo == "Iphone 13" || escolha == "2")
+            if (escolhaModelo == "2" || escolha == "Iphone 13")
             {
                 if (escolhaModelo == "2")
                 {
@@ -111,6 +119,9 @@ class Program
                 Smartphone iphone = new Iphone(numero, escolhaModelo, "79014238", escolhaMemoria);
 
                 iphone.Apresentacao();
+
+                System.Console.WriteLine("Iremos te ligar para testar o seu número de celular.");
+                iphone.Ligar();
 
                 System.Console.WriteLine("Digite o nome do aplicativo para instalar");
                 string nomeApp = Console.ReadLine();

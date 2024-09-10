@@ -17,20 +17,25 @@ namespace DesafioPOO.Models
 
         public void Ligar()
         {
+            System.Console.WriteLine();
             Console.WriteLine("Ligando...");
+            System.Console.WriteLine();
         }
 
         public void ReceberLigacao()
         {
+            System.Console.WriteLine();
             Console.WriteLine("Recebendo ligação...");
+            System.Console.WriteLine();
         }
 
         public void Apresentacao()
         {
             System.Console.WriteLine();
             System.Console.WriteLine($"Modelo: {Modelo}");
-            System.Console.WriteLine($"Número de celular {Numero}");
+            System.Console.WriteLine($"Número de celular: {Numero}");
             System.Console.WriteLine($"Armazenamento: {Memoria} Gb");
+            System.Console.WriteLine();
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
